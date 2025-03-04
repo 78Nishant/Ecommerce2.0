@@ -24,7 +24,7 @@ const Navbar = () => {
            <img className="transition duration-300 ease-in-out hover:scale-110" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png"  alt="cart"/>
           </button>
           </Link>
-          <button onClick={()=>{router.push('/auth/login')}} className=" bg-white text-black border px-4 py-2 rounded-md">
+          <button onClick={()=>{router.push('/auth/login')}} className=" bg-white text-black border px-4 py-2 rounded-md lg:mr-5">
             <p className="hover:scale-110 transition duration-300 ease-in-out ">Sign In</p>
             </button>
         </div>

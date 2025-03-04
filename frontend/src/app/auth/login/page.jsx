@@ -5,8 +5,10 @@ import { FaGoogle } from 'react-icons/fa';
 import { IoEye, IoEyeOff } from 'react-icons/io5';
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
+  const router=useRouter();
   const [showPassword, setShowPassword] = useState(false);
 
   // Initialize react-hook-form
@@ -171,6 +173,7 @@ export default function Login() {
 
               {/* Google Login */}
               <button
+              onClick={()=>router.push('api/auth/login')}
                 type="button"
                 className="w-full text-black flex items-center justify-center gap-2 border border-gray-300 py-3 rounded-full hover:bg-gray-100 transition-colors"
                 aria-label="Log in with Google"
